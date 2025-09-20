@@ -1,2 +1,25 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+create an array using input
+loop through array 
+create new elements for each possible string combination {
+    only characters that can "connect" to eachother ( ie. time = t, ti, tim, time, ime, me, e)
+}
+if no input return a blank array
+
+
+This code starts with returning an empty array if no parameters are set
+
+if there is a parameter it creates a new empty array named subStrings
+
+It will loop through the given string staring at index 0 (i=0) and each subsequent index ( j= i+1)
+
+slice will return each index and all following indices from that index, moving to the next index and starting over until the end of the string and push each set ofe indices into the array (subStrings)
+
+Once every index has been looped it will return the new array
+
+This is an example of O(n2) quadratic time as the execution time grows as the string increases for both loops
+
+
+
